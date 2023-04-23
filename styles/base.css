@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;600&family=Oswald&display=swap");
 
 /* Обнуление */
 * {
@@ -47,7 +48,7 @@ body {
 a {
   font-style: normal;
   font-weight: 200 !important;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 29px;
   color: #ffffff;
 }
@@ -137,6 +138,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -148,12 +150,25 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.header__list-item:hover > ul {
+  display: initial;
+}
 .header__list-item:not(:last-child) {
   margin-right: 80px;
   color: white;
 }
 .header__list-item:last-child {
   margin-right: 20px;
+}
+.header__list-item ul {
+  position: absolute;
+  width: 180px;
+  background: #102746;
+  display: none;
+}
+.header__list-item ul li {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .list-item {
   color: white;
@@ -179,8 +194,10 @@ body {
   left: 156px;
   top: 506px;
   border-radius: 20px;
-  background-color: #95b084;
   border: none;
+  background: #95b084;
+  box-shadow: 0px 0px 10px 3px rgba(137, 185, 120, 0.3);
+  border-radius: 90px;
 }
 .header-middle__left_btn span {
   font-style: normal;
@@ -237,11 +254,7 @@ body {
   height: 100%;
   background-color: #102746;
 }
-/* .map{
-    width: 100%;
-  height: 100%;
-  background-color: #102746; 
-} */
+
 
 .container {
   width: 80%;
@@ -285,65 +298,31 @@ body {
 }
 
 /* ---------------------------------------------------------------------------- Carousel */
-.carousel-indicators button {
-  background-color: #f2a1a1 !important;
+.carousel{
+  background: #191B32 !important;
+  padding: 10%;
+}
+
+.carousel-item .row .col img{
+  width: 380px !important;
+  margin-left: 10%;
+}
+.carousel-indicators button{
+  background-color: #F2A1A1 !important;
   width: 50px !important;
-  height: 2 px !important;
-  margin-left: 50px !important;
-  margin-bottom: 1px !important;
-  border-radius: 7px;
+  border-radius: 5px;
+  margin-bottom: 63% !important;
 }
-.carousel-indicators div span {
-  font-style: normal;
-  font-weight: 100;
-  font-size: 11px;
-  color: #ffffff;
-  margin-bottom: 570px !important;
-  margin-left: 49px;
-}
-
-.carousel-item {
-  background-color: #191b32 !important;
-  padding: 100px;
-}
-
-.geagraphy-content {
-  margin: 0 auto;
-  gap: 50px;
-  width: 80%;
-}
-.geagraphy-content p {
-  width: 45%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  color: #ffffff;
-}
-
-.geagraphy-content h4 {
-  display: inline-block;
-  margin: 10px 0 30px 0 !important;
-  align-items: center;
-  text-align: center;
+/* ---------------------------------------------------------------------------- */ */
+.video h3 {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter";
   font-style: normal;
   font-weight: 200 !important;
   font-size: 40px;
   line-height: 48px;
-  color: #ffffff;
-}
-.carousel-item {
-  display: flex;
-  flex-direction: column;
-}
-
-/* ---------------------------------------------------------------------------- */
-.video h4 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 58px;
-  color: #1a2458;
+  color: #1A2458;
 }
 .video iframe {
   margin-top: 30px;

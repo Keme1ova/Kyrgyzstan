@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none !important;
+  font-style: normal;
+  font-weight: 200 !important;
+  font-size: 18px;
+  line-height: 29px;
+  color: #ffffff;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100%;
+  line-height: 1;
+  background: #fafafa;
+  font-size: 14px;
+  color: #252b42;
+  font-weight: 500;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+.header {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  transition: 0.5s linear;
+  padding-bottom: 5px;
+}
+.header_active {
+  background-color: #223e6c;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.wrapper-full {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+}
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header__list-item:not(:last-child) {
+  margin-right: 80px;
+  color: white;
+}
+.header__list-item:last-child {
+  margin-right: 20px;
+}
+.list-item {
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 200;
+}
+.list-item:hover,
+.list-item:active {
+  opacity: 0.75;
+}
+.header__list-item_log:not(:last-child) {
+  margin-right: 20px;
+  color: white;
+  font-size: 18px !important;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-weight: 200 !important;
+}
+
+/* ---------------------------------------------------------------------------- */
+.main-img {
+  background-image: url(./../images/img/naryn.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 762px;
+}
+h1 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 15%;
+}
+.main-h1 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-img__content {
+  width: 30%;
+  padding: 10px;
+}
+.main-city,
+.population,
+.area {
+  flex-direction: column;
+}
+.main-city span:first-child,
+.population span:first-child,
+.area span:first-child {
+  font-style: normal;
+  font-family: 'Be Vietnam';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.main-city span:nth-child(2),
+.population span:nth-child(2),
+.area span:nth-child(2) {
+  font-style: normal;
+  font-family: 'Be Vietnam';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 35px;
+  color: #ffffff;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+.footer {
+  background-color: #1e3b71;
+  padding: 100px 0;
+  width: 100%;
+}
+.footer__menu:not(:last-child) {
+  margin-right: 56px;
+}
+.footer__menu-title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 7px;
+  font-weight: 600;
+}
+.footer__menu-link,
+.footer__menu-item {
+  color: white;
+  line-height: 24px;
+  transition: 0.4s all;
+  font-weight: 300;
+}
+.footer__menu-link_nav {
+  color: white;
+  line-height: 40px;
+  transition: 0.4s all;
+  padding-bottom: 20px;
+}
+.footer__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__logo-pic {
+  width: 190px;
+}
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer__menu-link:hover,
+.footer__menu-link:active,
+.footer__menu-link:focus,
+.footer__menu-link_nav:hover {
+  opacity: 0.7;
+}
