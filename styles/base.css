@@ -255,7 +255,6 @@ body {
   background-color: #102746;
 }
 
-
 .container {
   width: 80%;
   padding: 80px 0;
@@ -279,41 +278,54 @@ body {
 }
 
 .map {
-  /* width: 65%; */
-  margin: 0 auto;
   width: 100%;
   height: 100%;
   background-color: #191b32;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .map iframe {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   text-align: center;
-  margin: 70px 60px;
-  width: 85%;
-  height: 400px;
+  height: 500px;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 40px !important;
 }
 
 /* ---------------------------------------------------------------------------- Carousel */
-.carousel{
-  background: #191B32 !important;
+.carousel {
+  background: #191b32 !important;
   padding: 10%;
 }
-
-.carousel-item .row .col img{
-  width: 380px !important;
-  margin-left: 10%;
+.carousel-item > h4 {
+  font-family: "Inter" !important;
+  font-weight: 400 !important;
+  font-size: 40px !important;
+  line-height: 48px !important;
+  color: #ffffff;
 }
-.carousel-indicators button{
+.carousel-item .row .col img {
+  width: 380px !important;
+  margin-left: 20%;
+}
+.carousel-item .row .col p {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-right: 15%;
+  /* width: 40%; */
+}
+/* .carousel-indicators button{
   background-color: #F2A1A1 !important;
   width: 50px !important;
-  border-radius: 5px;
-  margin-bottom: 63% !important;
-}
-/* ---------------------------------------------------------------------------- */ */
+  border-radius: 9px !important;
+  margin-bottom: 70% !important;
+} */
+*/
+/* ---------------------------------------------------------------------------- */
 .video h3 {
   display: flex;
   justify-content: center;
@@ -322,7 +334,7 @@ body {
   font-weight: 200 !important;
   font-size: 40px;
   line-height: 48px;
-  color: #1A2458;
+  color: #1a2458;
 }
 .video iframe {
   margin-top: 30px;
