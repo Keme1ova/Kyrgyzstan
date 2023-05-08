@@ -10,6 +10,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kyrgyzstan</title>
     <style>
@@ -21,32 +22,72 @@
       <div class="wrapper">
         <div class="header__wrapper">
           <div class="header__logo">
-            <a href="file:///Users/altynaykemelova/Desktop/html/index.html" class="header__logo-icon">
+            <a
+              href="file:///Users/altynaykemelova/Desktop/html/home.html"
+              class="header__logo-icon"
+            >
               <img src="./images/svg/LOGO.svg" alt="" />
             </a>
           </div>
           <nav class="header__wrap">
             <ul class="header__list">
               <li class="header__list-item">
-                <a href="" class="list-item">Contacts</a>
+                <a href="https://t.me/kyrgyztourswow_bot" class="list-item"
+                  >Contacts</a
+                >
               </li>
               <li class="header__list-item">
                 <a href="" class="list-item">Tours</a>
               </li>
               <li class="header__list-item">
-                <a href="" class="list-item">Regions &bigtriangledown;</a>
+                <a href="" class="list-item" id="regions">Regions &bigtriangledown;</a>
                 <ul>
-                  <li><a href="/">Chui</a></li>
-                  <li><a href="file:///Users/altynaykemelova/Desktop/html/regions.html">Naryn</a></li>
-                  <li><a href="/">Isyk-Kul</a></li>
-                  <li><a href="/">Osh</a></li>
-                  <li><a href="/">Talas</a></li>
-                  <li><a href="/">Batken</a></li>
-                  <li><a href="/">Jalal-Abad</a></li>
+                  <li>
+                    <a
+                      href="file:///Users/altynaykemelova/Desktop/html/regions.html"
+                      >Chui</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="file:///Users/altynaykemelova/Desktop/html/regions.html"
+                      >Naryn</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="file:///Users/altynaykemelova/Desktop/html/regions.html"
+                      >Isyk-Kul</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="file:///Users/altynaykemelova/Desktop/html/regions.html"
+                      >Osh</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="file:///Users/altynaykemelova/Desktop/html/regions.html"
+                      >Talas</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="file:///Users/altynaykemelova/Desktop/html/regions.html"
+                      >Batken</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="file:///Users/altynaykemelova/Desktop/html/regions.html"
+                      >Jalal-Abad</a
+                    >
+                  </li>
                 </ul>
               </li>
               <li class="header__list-item">
-                <a href="" class="list-item">Articles</a>
+                <a href="/" class="list-item">Articles</a>
               </li>
             </ul>
           </nav>
@@ -141,21 +182,20 @@
             <img src="./images/svg/kyrmountain.svg" alt="" />
           </div>
           <p>
-            Кыргызстан - страна со сказочными и красивейшими горами, богатой
-            историей, необычной культурой и интересными традициями.Это настоящий
-            горный рай для альпинистов, скалолазов и любителей путешествий.
-            Удивительная страна небесных гор - это Кыргызстан. Особенность -
-            чистый воздух, кристально-чистые озера, родниковая вода снежные
-            вершины гор — это природа Кыргызстана.Эта страница вводит нас в
-            удивительный мир. Вы познакомитесь с географическим положением,
-            историей исследования, Великим Шелковым Путем, геоэкологическим
-            положением, устойчивым развитием страны. Вы можете отправится в
-            путешествие по Кыргызстану и пополнить свои знания.
+            Kyrgyzstan is a country with fabulous and beautiful mountains, rich
+            history, unusual culture and interesting traditions. this is a real
+            a mountain paradise for climbers, climbers and travel enthusiasts.
+            an amazing country of heavenly mountains is kyrgyzstan. peculiarity
+            - clean air, crystal clear lakes, snowy spring water the peaks of
+            the mountains are the nature of kyrgyzstan. This page introduces us
+            to wonderful world. you get to know the geographic location, history
+            of research, the Great Silk Road, geoecological position and
+            sustainable development of the country. you can go to travel around
+            kyrgyzstan and replenish your knowledge
           </p>
         </div>
       </section>
       <section class="main-content">
-        <!-- <div class="wrapper"> -->
         <section class="map mt-3">
           <h4>Kyrgyzstan on a map</h4>
           <iframe
@@ -169,16 +209,8 @@
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </section>
-        <!-- </div> -->
       </section>
       <div id="carouselExampleIndicators" class="carousel slide">
-        <!-- <div class="buttons">
-          <button type="button" class="btn btn-outline-danger" id="geography">Geography</button>
-          <button type="button" class="btn btn-outline-danger">History</button>
-          <button type="button" class="btn btn-outline-danger">Culture</button>
-          <button type="button" class="btn btn-outline-danger">Attraction</button>
-          <button type="button" class="btn btn-outline-danger">Transport</button>
-        </div> -->
         <div class="carousel-indicators">
           <button
             type="button"
@@ -226,15 +258,17 @@
               </div>
               <div class="col">
                 <p>
-                  Кыргызстан находится в Центральной Азии. На севере граничит с
-                  Казахстаном, на востоке – с Китаем, на западе – с
-                  Узбекистаном, а на юго-западе – с Таджикистаном. Выхода к морю
-                  нет. Общая площадь этой страны – 198 500 кв. км., а общая
-                  длина государственной границы – 3 878 км. Более 80% территории
-                  Кыргызстана располагается в горной системе Тянь-Шань. На
-                  юго-западе страны есть горная система Памиро-Алая, а на севере
-                  и юго-западе – плодородные Ферганская и Чуйская долины. Самая
-                  высокая точка – пик Победы, чья высота достигает 7 439 метров.
+                  Kyrgyzstan is located in Central Asia. in the north it borders
+                  on Kazakhstan, in the east - with China, in the west - with
+                  Uzbekistan, and in the southwest - with Tajikistan. access to
+                  the sea No. the total area of ​​this country is 198,500 sq.
+                  km., and the total the length of the state border is 3,878 km.
+                  more than 80% of the territory Kyrgyzstan is located in the
+                  Tien Shan mountain system. on in the southwest of the country
+                  there is the Pamir-Alai mountain system, and in the north and
+                  south-west - the fertile Ferghana and Chui valleys. the most
+                  the highest point is the peak of victory, whose height reaches
+                  7,439 meters
                 </p>
               </div>
             </div>
@@ -251,7 +285,15 @@
               </div>
               <div class="col">
                 <p>
-                  История Кыргызстана охватывает периоды от древних петроглифов до Великого Шелкового пути, от Советского Союза до принятия страной независимости. Кыргызстан издавна являлся исторически важным пунктом в центре Азии, поскольку находился на слиянии торговых путей и империй. Расположенная прямо между китайской, персидской, арабской, индийской, тюркской и российской империями, земля, которая сегодня формирует Кыргызстан, изменила историю многих народов, религий, культур и путешественников.
+                  The history of Kyrgyzstan covers periods from ancient
+                  petroglyphs to the Great Silk Road, from the Soviet Union to
+                  the adoption country of independence. kyrgyzstan has long been
+                  a historically an important point in the center of Asia,
+                  because it was at the confluence trade routes and empires.
+                  located right between the Chinese, Persian, Arabic, Indian,
+                  Turkic and Russian empires, the land that today forms
+                  kyrgyzstan, changed the history of many peoples, religions,
+                  cultures and travelers
                 </p>
               </div>
             </div>
@@ -268,15 +310,14 @@
               </div>
               <div class="col">
                 <p>
-                  На 2010 год в республике действовали 35 радиостанций, 10
-                  каналов эфирного и кабельного вещания, одно государственное и
-                  3 крупный частных информационных агентства, выходили 250
-                  печатных изданий[122]. Начало телевещания в республике
-                  относится к 1958—1959 годам, когда были осуществлены передачи
-                  Фрунзенской студии телевидения[123]. В 1992 году возникла
-                  первая частная телерадиокомпания «Пирамида»[124]. В 2010 году
-                  государственная телерадиокомпания была преобразована в
-                  общественное телерадиовещание.
+                  In 2010, 35 radio stations operated in the republic, 10 on-air
+                  and cable broadcasting channels, one state and 3 large private
+                  news agencies, published 250 printed publications[122]. start
+                  of television broadcasting in the republic refers to
+                  1958-1959, when the transfers were made Frunze television
+                  studio[123]. in 1992 arose the first private television and
+                  radio company "Pyramid"[124]. in 2010 state television and
+                  radio company was transformed into public broadcasting
                 </p>
               </div>
             </div>
@@ -290,31 +331,31 @@
                   class="d-block w-100"
                   alt="..."
                 />
-                <img src="./images/img/population2.jpg" alt="">
+                <img src="./images/img/population2.jpg" alt="" />
               </div>
               <div class="col d-flex justify-content-center align-items-center">
                 <p>
-                  Постоянное население Киргизии — 6 389 500 человек (на 1 января
-                  2019).До 1960-х годов население республики быстро росло за
-                  счёт миграционного и естественного прироста; последний был
-                  особенно значительным у сельских киргизов, узбеков и других
-                  среднеазиатских народов. 25 ноября 2015 население Киргизии
-                  достигло 6 млн человек. Бо́льшая часть населения сосредоточена
-                  на юге республики — Ошской, Джалал-Абадской, Баткенской
-                  областях и городе Ош (3,4 млн жителей или 53 % населения
-                  республики). Также значительная доля населения
-                  сконцентрирована в Чуйской долине (Чуйская область и город
-                  Бишкек; 1,9 млн жителей или 31 % населения республики). Самые
-                  густонаселённые области — Ошская и Чуйская. Национальный
-                  состав постоянного населения киргизы   73.7 % узбеки   14.8 %
-                  русские   5.1 % дунгане   1.1 % уйгуры   0.9 % таджики   0.8 %
-                  другие   3.6 % Основное население страны — 4 896 182 человек
-                  составляют киргизы, проживающие на всей территории страны и
-                  преобладают в большинстве сельских районов. На втором месте по
-                  численности находятся узбеки — 985 358 человека. На третьем
-                  месте по численности находятся русские — 341 351 человек.
-                  Численность населения других национальностей не превышает 80
-                  тыс. человек.
+                  The permanent population of Kyrgyzstan is 6,389,500 people (as
+                  of January 1 2019). Until the 1960s, the population of the
+                  republic grew rapidly over account of migration and natural
+                  increase; the last one was especially significant among rural
+                  Kyrgyz, Uzbeks and others Central Asian peoples. November 25,
+                  2015 the population of Kyrgyzstan reached 6 million people.
+                  most of the population is concentrated in the south of the
+                  republic - Osh, Jalal-Abad, Batken regions and the city of osh
+                  (3.4 million inhabitants or 53% of the population republics).
+                  also a significant proportion of the population concentrated
+                  in the Chui valley (Chui region and the city Bishkek; 1.9
+                  million inhabitants or 31% of the population of the republic).
+                  the most densely populated regions - Osh and Chui. National
+                  composition of the permanent population Kyrgyz   73.7% Uzbeks
+                    14.8% Russians   5.1% Dungans   1.1% Uighurs   0.9% Tajiks  
+                  0.8% others   3.6% of the main population of the country -
+                  4,896,182 people make up the Kyrgyz living throughout the
+                  country and prevail in most rural areas. in second place in
+                  There are Uzbeks - 985,358 people. on the third place in terms
+                  of numbers are Russians - 341,351 people. the population of
+                  other nationalities does not exceed 80 thousand people
                 </p>
               </div>
             </div>
@@ -331,19 +372,17 @@
               </div>
               <div class="col">
                 <p>
-                  Общая протяжённость автомобильных дорог в стране 34 000 км,
-                  включая 18 810 км дорог общего пользования и обслуживаемые
-                  дорожными подразделениями Министерства транспорта и
-                  коммуникаций Киргизии и 15 190 км дорог городов, сёл,
-                  сельскохозяйственных, промышленных и других предприятий.
-                  Протяжённость автомобильных дорог международного значения
-                  составляет 4163 км, государственного — 5678 км, местного
-                  значения — 8969 км. Из них протяжённость дорог общего
-                  пользования с твёрдым покрытием составляет 7228 км, в том
-                  числе 11 км с цементобетонным покрытием, 4969 км с
-                  асфальтобетонным покрытием и 2248 км с черногравийным
-                  покрытием. Дороги с гравийным покрытием — 9961 км, грунтовые
-                  дороги — 1621 км.
+                  The total length of roads in the country is 34,000 km,
+                  including 18,810 km of public roads and maintained road
+                  departments of the Ministry of Transport and communications of
+                  Kyrgyzstan and 15,190 km of roads of cities, villages,
+                  agricultural, industrial and other enterprises. length of
+                  highways of international importance is 4163 km, state - 5678
+                  km, local values ​​- 8969 km. of which the total length of
+                  roads use with hard surface is 7228 km, including including 11
+                  km with cement concrete pavement, 4969 km with with asphalt
+                  concrete pavement and 2248 km with black gravel coated. gravel
+                  roads - 9961 km, unpaved roads - 1621 km
                 </p>
               </div>
             </div>
@@ -399,13 +438,13 @@
                 <h3 class="footer__menu-title">Contact us</h3>
               </li>
               <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">Telegram</a>
+                <a href="https://t.me/kyrgyztourswow_bot" class="footer__menu-link">Telegram</a>
               </li>
               <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link">WhatsApp</a>
+                <a href="https://wa.me/996550542277" class="footer__menu-link">WhatsApp</a>
               </li>
-              <li class="footer__menu-item">Eamil: kyrgyztours@gmail.com</li>
-              <li class="footer__menu-item">Tel: +996904897</li>
+              <li class="footer__menu-item">Email: kyrgyztours@gmail.com</li>
+              <li class="footer__menu-item">Tel: +996505505505</li>
               <li class="footer__menu-item">Address: Maldybaeva 34b</li>
             </ul>
             <ul class="footer__menu">
@@ -428,12 +467,12 @@
               </li>
               <li class="footer__menu-item">
                 <a href="#!" class="footer__menu-link"
-                  >What are most popular tours</a
+                  >What are most popular tours?</a
                 >
               </li>
               <li class="footer__menu-item">
                 <a href="#!" class="footer__menu-link"
-                  >Do you sotrudnichat with me</a
+                  >Do you cooperate with me?</a
                 >
               </li>
               <li class="footer__menu-item">
@@ -447,7 +486,7 @@
                 <h3 class="footer__menu-title">Navigation</h3>
               </li>
               <li class="footer__menu-item">
-                <a href="#!" class="footer__menu-link_nav">Regions</a>
+                <a href="#regions" class="footer__menu-link_nav">Regions</a>
               </li>
               <li class="footer__menu-item">
                 <a href="#!" class="footer__menu-link_nav">Tours</a>

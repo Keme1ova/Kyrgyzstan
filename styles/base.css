@@ -1,16 +1,29 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;300;400;600&family=Oswald&display=swap");
-
 /* Обнуление */
-* {
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@200;400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  text-decoration: none;
+}
+input[type="text"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="text"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
 }
 a {
   text-decoration: none;
@@ -30,12 +43,17 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
+  padding: 0;
+  margin: 0;
   font-weight: inherit;
   font-size: inherit;
 }
 html,
 body {
+  width: 1512px;
+  margin: 0 auto;
   height: 100%;
   line-height: 1;
   background: #fafafa;
@@ -43,73 +61,21 @@ body {
   color: #252b42;
   font-weight: 500;
   font-family: "Be Vietnam Pro", sans-serif;
+  scroll-behavior: smooth;
 }
 /* ---------------------------------------------------------------------------- */
-a {
-  font-style: normal;
-  font-weight: 200 !important;
-  font-size: 16px;
-  line-height: 29px;
-  color: #ffffff;
+
+.main {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.main__image,
+.img__content {
+  width: inherit;
 }
 
-p {
-  width: 80%;
-  font-style: normal;
-  font-weight: 200 !important;
-  font-size: 16px;
-  line-height: 23px;
-  color: #ffffff;
-  margin: 20px 0;
-}
-h1 {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 200 !important;
-  font-size: 70px;
-  line-height: 90px;
-  color: #ffffff;
-}
-h5 {
-  font-style: normal;
-  font-weight: 200 !important;
-  font-size: 20px;
-  line-height: 29px;
-  color: #ffb35f;
-  margin-bottom: 15px;
-}
-span {
-  font-style: normal;
-  font-weight: 200 !important;
-  font-size: 16px;
-  line-height: 23px;
-  color: #ffffff;
-}
-h4 {
-  display: flex;
-  justify-content: center;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200 !important;
-  font-size: 40px;
-  line-height: 48px;
-  color: #ffffff;
-}
 /* ---------------------------------------------------------------------------- */
-.wrapper {
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-/* ---------------------------------------------------------------------------- */
-body {
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: normal;
-  color: #102746;
-}
 .header {
   width: 100%;
   margin: 0 auto;
@@ -123,11 +89,6 @@ body {
 .header_active {
   background-color: #223e6c;
 }
-.btn {
-  background: none;
-  border: none;
-  font-size: 20px;
-}
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -138,7 +99,6 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -160,21 +120,18 @@ body {
 .header__list-item:last-child {
   margin-right: 20px;
 }
-.header__list-item ul {
-  position: absolute;
-  width: 180px;
-  background: #102746;
-  display: none;
-}
-.header__list-item ul li {
-  width: 100%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
 .list-item {
   color: white;
   font-size: 18px;
   line-height: 24px;
   font-weight: 200;
+}
+.header__list-item ul {
+  position: absolute;
+  z-index: 20;
+  width: 130px;
+  background: #0a274d;
+  display: none;
 }
 .list-item:hover,
 .list-item:active {
@@ -184,169 +141,25 @@ body {
   margin-right: 20px;
   color: white;
 }
-.header-middle {
-  padding-top: 15vh;
+.header__list-item ul li {
+  border: 10px solid rgba(0, 0, 0, 0.1);
 }
-
-.header-middle__left_btn {
-  width: 208px;
-  height: 44px;
-  left: 156px;
-  top: 506px;
-  border-radius: 20px;
-  border: none;
-  background: #95b084;
-  box-shadow: 0px 0px 10px 3px rgba(137, 185, 120, 0.3);
-  border-radius: 90px;
+.header__list-item ul li a {
+  color: rgb(223, 223, 223);
 }
-.header-middle__left_btn span {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  color: #ffffff;
-  margin: 0 auto;
-}
-.header-middle__left_btn img {
-  margin-right: 20px;
-}
-.header-middle__right img {
-  margin-left: 60px;
-}
-.capital span:nth-child(2),
-.population span:nth-child(2),
-.area span:nth-child(2),
-.language span:nth-child(2),
-.currency span:nth-child(2) {
-  font-family: "Be Vietnam Pro", sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 24px;
-  line-height: 35px;
-  color: #ffffff;
-}
-.header-bottom {
-  padding-bottom: 10vh;
-}
-.header-bottom__content {
-  width: 80%;
-}
-.header-bottom__content div a {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  color: #ffffff;
-  display: block;
-  margin-top: 5px;
-}
-.flag-img {
-  margin-top: 10px;
+.header__list-item ul li:hover {
+  opacity: 0.75;
+  color: #000;
+  transition-duration: 0.3s;
 }
 /* ---------------------------------------------------------------------------- */
-.main-img {
-  background-image: url(./../images/img/main_image.png);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.main__content {
-  width: 100%;
-  height: 100%;
-  background-color: #102746;
-}
 
-.container {
-  width: 80%;
-  padding: 80px 0;
-}
-.content__img {
-  width: 70%;
-  margin: 0 auto;
-  gap: 30px;
-  margin-bottom: 100px;
-}
-.container p {
-  width: 85%;
-  margin: 0 auto;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #000000;
-}
-
-.map {
-  width: 100%;
-  height: 100%;
-  background-color: #191b32;
-  padding: 40px 0;
-}
-
-.map iframe {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 500px;
-  width: 65%;
-  margin: 0 auto;
-  margin-top: 40px !important;
-}
-
-/* ---------------------------------------------------------------------------- Carousel */
-.carousel {
-  background: #191b32 !important;
-  padding: 10%;
-}
-.carousel-item > h4 {
-  font-family: "Inter" !important;
-  font-weight: 400 !important;
-  font-size: 40px !important;
-  line-height: 48px !important;
-  color: #ffffff;
-}
-.carousel-item .row .col img {
-  width: 380px !important;
-  margin-left: 20%;
-}
-.carousel-item .row .col p {
-  font-family: "Inter";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
-  margin-right: 15%;
-  /* width: 40%; */
-}
-/* .carousel-indicators button{
-  background-color: #F2A1A1 !important;
-  width: 50px !important;
-  border-radius: 9px !important;
-  margin-bottom: 70% !important;
-} */
-*/
 /* ---------------------------------------------------------------------------- */
-.video h3 {
-  display: flex;
-  justify-content: center;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 200 !important;
-  font-size: 40px;
-  line-height: 48px;
-  color: #1a2458;
-}
-.video iframe {
-  margin-top: 30px;
-  width: 900px;
-  height: 500px;
-  margin-left: 19%;
-}
-
 .footer {
   background-color: #1e3b71;
   padding: 100px 0;
   width: 100%;
+  margin: 0 auto;
 }
 .footer__menu:not(:last-child) {
   margin-right: 56px;
@@ -378,6 +191,9 @@ body {
 }
 .footer__logo-pic {
   width: 190px;
+}
+.footer li{
+  font-size: 17px;
 }
 .footer__nav {
   display: flex;
