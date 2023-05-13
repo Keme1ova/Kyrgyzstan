@@ -64,7 +64,7 @@ input {
   margin: 0 auto;
   justify-self: start;
 }
-button {
+.sub {
   width: 114px;
   height: 43px;
   background: #eb8870;
