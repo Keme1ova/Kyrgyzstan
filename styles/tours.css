@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__image {
+  width: 100%;
+  position: relative;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 119px;
+  color: #ffffff;
+  background-color: rgba(97, 133, 223, 0.3);
+  width: 595px;
+}
+.main-info-block {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+}
+.main-info-text {
+  margin: 20px 0 40px 0;
+}
+.main-info-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  width: 40%;
+}
+.main-info-block button {
+  width: 168px;
+  height: 50px;
+  background: #7689ce;
+  border-radius: 10px;
+  padding: 15px 10px;
+  position: absolute;
+}
+.main-info-block button a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+}
+button > img {
+  position: relative;
+  top: 5px;
+  left: 12px;
+}
+/* ------------------------------------ */
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search {
+  width: 45%;
+  border: 2px solid #abb4cd;
+  border-radius: 90px;
+  margin: 56px 0;
+  display: flex;
+  justify-content: space-around;
+}
+input {
+  width: 588px;
+  height: 50px;
+  background: #ffffff;
+  padding-left: 15px;
+  border-radius: 90px;
+  border-left: 2px solid #abb4cd;
+  border: none;
+}
+.search img{
+    margin-right: 10px;
+}
+
+/* ----------------------------- */
+.tours-cards {
+  width: 100%;
+}
+.tours-cards .wrapper {
+  width: 72%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tours-cards__card {
+  display: flex;
+  flex-direction: row;
+  column-gap: 23.73px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 473px;
+  height: 232px;
+  margin-bottom: 50px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.13));
+  padding-left: 10px;
+  margin-right: 45px;
+}
+h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2c3d79;
+}
+h5 {
+  font-family: "Be Vietnam";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #a5a5a5;
+}
+.star {
+  display: flex;
+  flex-direction: row;
+  column-gap: 6.55px;
+  align-items: center;
+}
+.tours-cards__description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+}
+
+.second-img {
+  width: 230px;
+  height: 211px;
+  background: url();
+  background-size: cover;
+}
+
+.vector {
+  padding: 10px 10px;
+}
+
+.tours__text {
+  width: 199px;
+  font-family: "Be Vietnam";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  background: linear-gradient(180deg, #0e0d0d 0%, rgba(14, 13, 13, 0) 80.39%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.second-title {
+  font-family: "Be Vietnam";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  color: #ca3e1f;
+}
+
+.guide {
+  font-family: "Be Vietnam";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #969696;
+}
